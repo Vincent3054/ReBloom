@@ -19,6 +19,16 @@ export const routes: Routes = [
           breadcrumb: BREADCRUMB.HOME,
         },
       },
+      {
+        path: STATIC_ROUTES.Order,
+        loadComponent: () =>
+          import('./pages/order/order.component').then(
+            (c) => c.OrderComponent
+          ),
+        // data: {
+        //   breadcrumb: BREADCRUMB.HOME,
+        // },
+      },
     ]
   }
 ];
