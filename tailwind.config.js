@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./src/**/*.{html,ts}",
   ],
+  mode: 'jit',
   theme: {
     extend: {
       width: {
@@ -20,6 +21,9 @@ module.exports = {
         '1440': '1440px',
       }
     },
+    colors:{
+      darkGray:'#838D52'
+    }
   },
   plugins: [],
 }
