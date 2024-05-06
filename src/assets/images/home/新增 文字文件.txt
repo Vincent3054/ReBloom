@@ -1,0 +1,39 @@
+<div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
+      <!-- Text Section -->
+      <div class="lg:col-span-5">
+          <div class="p-4 bg-green-100 rounded-lg shadow text">
+              <p>為重要的他挑選一束花吧！</p>
+              <p>Select a bouquet of blooms </p>
+              <p>for the one who matters most !</p>
+          </div>
+      </div>
+
+      <!-- Top Image -->
+      <div class="lg:col-span-7 flex justify-end top-img">
+        <img src="../../../assets/images/home/1280-top-img.png" alt="Top Flower Image">
+      </div>
+
+      <!-- Left Image -->
+      <div class="lg:col-span-6 left-img flex items-end">
+        <img src="../../../assets/images/home/1280-left-img.png" alt="Left Flower Image">
+      </div>
+
+      <!-- Right Image -->
+      <div class="lg:col-span-6 right-img flex items-end">
+        <img src="../../../assets/images/home/1280-right-img.png" alt="Right Flower Image">
+      </div>
+
+      <!-- Content Section -->
+      <div class="lg:col-span-5 content">
+          <div class="p-4 bg-green-100 rounded-lg shadow">
+              <p>Some additional content or descriptions here.</p>
+          </div>
+      </div>
+
+      <!-- Bottom Image -->
+      <div class="lg:col-span-7 flex justify-end items-start bottom-img">
+        <img src="../../../assets/images/home/1280-bottom-img.png" alt="Bottom Flower Image">
+      </div>
+  </div>
+</div>

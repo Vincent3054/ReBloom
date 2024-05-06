@@ -1,0 +1,81 @@
+// 假設你需要自定義的額外樣式，可以在這裡寫
+.text, .content {
+  @apply text-sm lg:text-base; // Responsive font size
+}
+.text-border-bottom{
+  border-bottom: 1px solid #838D52 ;
+}
+.mb-text{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 14pt;
+  line-height: 1.5;
+}
+.mb-text-box{
+  padding: 1rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 900px) {
+  .mb-text{
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    font-size: 10pt;
+  }
+}
+@media (max-width: 750px) {
+  .mb-text{
+    font-size: 8pt;
+  }
+}
+
+@media (max-width: 700px) {
+  .mb-text{
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .mb-text{
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    font-size: 7pt;
+  }
+}
+
+@media (max-width: 550px) {
+  .mb-text{
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+  }
+  .mb-text-box{
+    padding-top: 0.85rem;
+    padding-bottom: 0.85rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .mb-text-box{
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .mb-text-box{
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+  .mb-text{
+    padding-top: 0.05rem;
+    padding-bottom: 0.05rem;
+    font-size: 6pt;
+  }
+}
+
+@media (max-width: 400px) {
+  .mb-text{
+    font-size: 5pt;
+  }
+}
