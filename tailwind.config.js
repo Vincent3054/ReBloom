@@ -19,10 +19,14 @@ module.exports = {
       },
       maxWidth: {
         '1440': '1440px',
+      },
+      backgroundImage: {
+        'footer-pattern': "url('./assets/images/layouts/footer-bgi.png')"
       }
     },
     colors:{
-      darkGray:'#838D52'
+      darkGray:'#838D52',
+      grayWhite:`#FCFAF4`
     }
   },
   plugins: [],

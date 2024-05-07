@@ -11,6 +11,6 @@ import { BreadcrumbComponent } from '../../main/breadcrumb/breadcrumb.component'
   standalone: true,
   imports: [CommonModule, RouterOutlet,FooterComponent,HeaderComponent,BreadcrumbComponent],
   templateUrl: './layout-card.component.html',
-  styles: [],
+  styleUrl: './layout-card.component.scss'
 })
 export class LayoutCardComponent {}
