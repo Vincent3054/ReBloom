@@ -1,1 +1,19 @@
-<p>header works!</p>
+<div class="container-header bg-green-100 px-8 py-4 flex items-center justify-between">
+  <div>
+    <img src={{HeaderLogImgSrc}} alt="Bloom Logo">
+  </div>
+  <div class="flex items-center flex-grow ">
+    <nav class="ml-auto hidden md:block"> <!-- 將 nav 移至最右側 -->
+      <ul class="flex gap-x-8">
+        <li><a href="#" class="link">關於ReBloom</a></li>
+        <li><a href="#" class="link">布花圖鑑</a></li>
+        <li><a href="#" class="link">訂購專屬花束</a></li>
+        <li><a href="#" class="link">Q & A</a></li>
+      </ul>
+    </nav>
+    <img class="ml-9  hidden md:block" src="../../../assets/images/layouts/ig.png" alt="Instagram">
+  </div>
+  <div class="hamburger block md:hidden">
+    <img class="ml-9 hamburger " src="../../../assets/images/layouts/768-header-hamburger.png" alt="header-hamburger">
+  </div>
+</div>

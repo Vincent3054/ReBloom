@@ -1,0 +1,76 @@
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  height: 80px;
+
+  img {
+    max-height: 40px;
+    width: auto;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+
+    li {
+      &:not(:first-child) {
+        padding-left: 30px;
+      }
+      a {
+        color: #838D52;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1rem;
+        transition: color 0.3s;
+
+        &:hover {
+          color: #38a169;
+        }
+      }
+    }
+  }
+
+  nav {
+    border: 1px solid #838D52;
+    border-radius: 100px 100px 100px 0;
+    padding: 14px 40px;
+    max-width: 576px; // 確保 nav 寬度固定
+    margin-left: auto; // 將 nav 推至最右側
+  }
+}
+
+.hamburger{
+  img{
+    width: 88px;
+    height: 88px;
+  }
+}
+
+
+@media (max-width: 1140px) {
+  .container-header ul li:not(:first-child) {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .container-header ul li:not(:first-child) {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-header {
+    height: 87px;
+    img {
+      max-height: 87px;
+    }
+  }
+}
