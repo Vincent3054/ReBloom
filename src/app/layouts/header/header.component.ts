@@ -9,8 +9,8 @@ import { Component,HostListener } from '@angular/core';
 })
 export class HeaderComponent {
  // 設定初始圖片來源
-  HeaderLogImgSrc = '../../../assets/images/layouts/1280-header-logo.png';
-//  topRightImgSrc = '../../../assets/images/home/1280-top-right-img.png';
+  HeaderLogoImgSrc = '../../../assets/images/layouts/1280-header-logo.png';
+  HeaderHamburgerImgSrc='../../../assets/images/layouts/768-header-hamburger.png';
 
  constructor() {
    this.updateImageSource();
@@ -25,9 +25,23 @@ export class HeaderComponent {
  // 根據螢幕寬度更新圖片來源
  updateImageSource() {
    if (window.innerWidth <= 768) {
-     this.HeaderLogImgSrc = '../../../assets/images/layouts/768-header-logo.png';
-   } else {
-     this.HeaderLogImgSrc = '../../../assets/images/layouts/1280-header-logo.png';
+     this.HeaderLogoImgSrc = '../../../assets/images/layouts/768-header-logo.png';
+     this.HeaderHamburgerImgSrc='../../../assets/images/layouts/768-header-hamburger.png';
+   }
+   else if (window.innerWidth <= 600) {
+     this.HeaderLogoImgSrc = '../../../assets/images/layouts/600-header-logo.png';
+     this.HeaderHamburgerImgSrc = '../../../assets/images/layouts/600-header-hamburger.png';
+   }
+   else if (window.innerWidth <= 500) {
+    this.HeaderLogoImgSrc = '../../../assets/images/layouts/500-header-logo.png';
+    this.HeaderHamburgerImgSrc = '../../../assets/images/layouts/500-header-hamburger.png';
+   }
+   else if (window.innerWidth <= 400) {
+    this.HeaderLogoImgSrc = '../../../assets/images/layouts/400-header-logo.png';
+    this.HeaderHamburgerImgSrc = '../../../assets/images/layouts/400-header-hamburger.png';
+   }else{
+    this.HeaderLogoImgSrc = '../../../assets/images/layouts/1280-header-logo.png';
+    this.HeaderHamburgerImgSrc='../../../assets/images/layouts/768-header-hamburger.png';
    }
  }
 }
