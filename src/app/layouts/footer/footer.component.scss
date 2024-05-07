@@ -1,12 +1,11 @@
 .content{
-  background-image: url('../../../assets/images/layouts/footer-bgi.png'); /* 更换为您的实际图片路径 */
+  background-image: url('../../../assets/images/layouts/1280-footer-bgi.png'); /* 更换为您的实际图片路径 */
   background-position: bottom; /* 确保图片从底部开始 */
-  // background-size: cover; /* 覆盖整个元素 */
 }
 .container-footer{
   font-size: 0.875rem;
   line-height: 1.25rem;
-  margin-top: 2rem;
+  padding-top: 2.5rem;
 }
 
 .footer-h{
@@ -14,32 +13,41 @@
 }
 
 @media (max-width: 768px) {
+  .content{
+    background-image: url('../../../assets/images/layouts/768-footer-bgi.png'); /* 更换为您的实际图片路径 */
+  }
   .container-footer{
     font-size: 0.7rem;
     line-height: 1rem;
-    margin-top: 1.5rem;
+    padding-top: 2rem;
   }
   .footer-h{
-    min-height: 133px;
+    min-height: 130px;
   }
 }
 
 @media (max-width: 600px) {
+  .content{
+    background-image: url('../../../assets/images/layouts/600-footer-bgi.png'); /* 更换为您的实际图片路径 */
+  }
   .container-footer{
     font-size: 0.6rem;
     line-height: 0.85rem;
-    margin-top: 1rem;
+    padding-top: 1.5rem;
   }
   .footer-h{
-    min-height: 104px;
+    min-height: 105px;
   }
 }
 
 @media (max-width: 500px) {
+  .content{
+    background-image: url('../../../assets/images/layouts/500-footer-bgi.png'); /* 更换为您的实际图片路径 */
+  }
   .container-footer{
     font-size: 0.5rem;
     line-height: 0.5rem;
-    margin-top: 0.85rem;
+    padding-top: 1.35rem;
   }
   .footer-h{
     min-height: 87px;
@@ -47,10 +55,13 @@
 }
 
 @media (max-width: 400px) {
+  .content{
+    background-image: url('../../../assets/images/layouts/400-footer-bgi.png'); /* 更换为您的实际图片路径 */
+  }
   .container-footer{
     font-size: 0.4rem;
     line-height: 0.25rem;
-    margin-top: 0.5rem;
+    padding-top: 1rem;
   }
   .footer-h{
     min-height: 69px;
