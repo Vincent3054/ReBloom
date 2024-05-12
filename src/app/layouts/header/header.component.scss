@@ -5,7 +5,7 @@
   align-items: center;
   padding: 1rem 2rem;
   height: 80px;
-
+  margin-bottom: 15px;
   ul {
     display: flex;
     justify-content: center;
@@ -71,6 +71,7 @@
 @media (max-width: 768px) {
   .container-header{
     padding: 1rem 1rem;
+    margin-bottom: 5px;
   }
   .header-logo{
     img {
@@ -88,6 +89,9 @@
 }
 
 @media (max-width: 600px) {
+  .container-header{
+    margin-bottom: 0px;
+  }
   .header-logo{
     img {
       max-width: 181px;

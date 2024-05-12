@@ -1,0 +1,106 @@
+.responsive-banner img {
+  width: 100%;
+  height: auto;
+}
+
+.title-btn {
+  border-radius: 35.56px;
+  font-size: 21px;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  outline: none;
+  margin: 5px 0px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.designer-btn{
+  width: 135px;
+  border: none;
+  background-color: #838D52;
+  color: white;
+}
+.minimalist-btn {
+  width: 135px;
+  color: #838D52;
+  border: 1px solid #838D52;
+  margin-left: 25%;
+}
+hr{
+  color: #838D52;
+  margin: 0px 3%;
+}
+
+.container-top-content,.container-mid-content{
+  padding: 15px 10%;
+}
+.container-bottom-content{
+  padding: 10px 10%;
+  .title{
+    font-size: 37px;
+    color: #838D52;
+    font-weight: 900;
+  }
+  .text{
+    font-size: 22px;
+    line-height: 2.5;
+    font-weight: 400;
+  }
+  .btn{
+    width: 378px;
+    color: white;
+    background-color: #838D52;
+    border-radius: 35.56px;
+    font-size: 37px;
+    font-weight: 600;
+    margin-top: 24px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .title-btn {
+    font-size: 17px;
+    padding: 0.25rem 1rem;
+  }
+  .designer-btn{
+    width: 108px;
+  }
+  .minimalist-btn {
+    width: 108px;
+  }
+  .container-bottom-content{
+    .title{
+      font-size: 20px;
+    }
+    .text{
+      font-size: 12px;
+      line-height: 2.5;
+    }
+    .btn{
+      width: 200px;
+      font-size: 20px;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .container-bottom-content{
+    .title{
+      font-size: 17px;
+    }
+    .text{
+      font-size: 12px;
+      line-height: 2.5;
+    }
+    .btn{
+      width: 190px;
+      font-size: 17px;
+      padding: 4px 8px;
+    }
+  }
+}
