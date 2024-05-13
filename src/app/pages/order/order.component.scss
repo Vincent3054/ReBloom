@@ -3,9 +3,13 @@
   height: auto;
 }
 
+.container-title{
+  margin: 10px 0px;
+}
+
 .title-btn {
   border-radius: 35.56px;
-  font-size: 21px;
+  font-size: 28px;
   font-weight: 600;
   padding: 0.75rem 1.5rem;
   cursor: pointer;
@@ -18,13 +22,13 @@
 }
 
 .designer-btn{
-  width: 135px;
+  width: 200px;
   border: none;
   background-color: #838D52;
   color: white;
 }
 .minimalist-btn {
-  width: 135px;
+  width: 200px;
   color: #838D52;
   border: 1px solid #838D52;
   margin-left: 25%;
@@ -34,11 +38,36 @@ hr{
   margin: 0px 3%;
 }
 
-.container-top-content,.container-mid-content{
-  padding: 15px 10%;
+.container-top-content{
+  padding: 30px 10%;
+  .title{
+    font-size: 26px;
+    color: #838D52;
+    font-weight: 900;
+  }
+  .text{
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  .title-remark{
+    font-size: 14px;
+  }
+}
+.container-mid-content{
+  padding: 0px 10% 0px 10%;
+  .title{
+    font-size: 26px;
+    color: #838D52;
+    font-weight: 900;
+    margin-bottom: 0px;
+    line-height: 1;
+    margin-bottom: 5px;
+  }
 }
 .container-bottom-content{
-  padding: 10px 10%;
+  padding: 0px 10% 0px 10%;
   .title{
     font-size: 37px;
     color: #838D52;
@@ -50,14 +79,30 @@ hr{
     font-weight: 400;
   }
   .btn{
-    width: 378px;
+    width: 340px;
     color: white;
     background-color: #838D52;
     border-radius: 35.56px;
-    font-size: 37px;
+    font-size: 30px;
     font-weight: 600;
     margin-top: 24px;
-    padding: 8px 16px;
+    margin-bottom: 24px;
+    padding: 8px 12px;
+  }
+}
+@media (max-width: 1280px) {
+  .container-bottom-content{
+    .title{
+      font-size: 26px;
+      letter-spacing:-1px;
+    }
+    .text{
+      font-size: 14px;
+    }
+    .btn{
+      font-size: 20px;
+      width: 240px;
+    }
   }
 }
 
@@ -81,26 +126,66 @@ hr{
       line-height: 2.5;
     }
     .btn{
-      width: 200px;
-      font-size: 20px;
+      width: 180px;
+      font-size: 16px;
     }
   }
 }
 
-
 @media (max-width: 768px) {
   .container-bottom-content{
     .title{
-      font-size: 17px;
+      font-size: 15px;
     }
     .text{
-      font-size: 12px;
-      line-height: 2.5;
+      font-size: 9px;
     }
     .btn{
-      width: 190px;
-      font-size: 17px;
+      width: 140px;
+      font-size: 12px;
       padding: 4px 8px;
     }
   }
+}
+@media (max-width: 767px) {
+  .designer-btn{
+    font-size: 24px;
+    width: 180px;
+  }
+
+  .minimalist-btn {
+    font-size: 24px;
+    width: 180px;
+  }
+  .container-top-content{
+    .btn{
+      width: 140px;
+      font-size: 12px;
+      padding: 4px 8px;
+    }
+  }
+  .container-bottom-content{
+    .title{
+      font-size: 26px;
+    }
+    .text{
+      font-size: 18px;
+      line-height: 1.4;
+      p{
+        margin-bottom: 10px;
+      }
+    }
+    .btn{
+      width: 230px;
+      font-size: 22px;
+      padding: 4px 8px;
+    }
+  }
+}
+
+@media (max-width: 430px) {
+
+}
+@media (max-width: 390px) {
+
 }
