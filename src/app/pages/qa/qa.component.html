@@ -5,22 +5,64 @@
   <div class="container-qa w-full"> <!-- 確保容器寬度足夠 -->
     <div class="qa-text flex justify-between items-center">
       <p class="title">訂購相關 Ordering</p>
-      <img src="{{QaArrowBottomImgSrc}}" alt="arrow-bottom">
+      <img src="{{isExpanded[0] ? QaArrowTopImgSrc : QaArrowBottomImgSrc}}" alt="arrow-bottom" (click)="toggle(0)">
+    </div>
+    <div *ngIf="isExpanded[0]" class="grid grid-cols-10 md:grid-cols-10 xs:grid-cols-1 xxxxxxxxs:grid-cols-1">
+      <div class="col-span-4 md:col-span-4 xs:col-span-0">
+        <!-- 左邊 4 格留白 -->
+      </div>
+      <div class="text col-span-6 md:col-span-6 xs:col-span-1">
+        <p class="sub-title">1 請問設計師款跟客製款有什麼不同？</p>
+        <p class="mb-text">➔ 設計師款採認領製，下單前可以到我們的限時動態看看有沒有喜歡的花色，也可以私訊要細節圖！客製款僅包含布料提供及款式選擇，不含選擇布料對應的位子，簡單來說就是布料寄給我們之後會幫你做顏色配置啦</p>
+        <p class="sub-title">2 取貨方式只能選711嗎？要運費嗎？</p>
+        <p class="mb-text-bottom">➔ 目前只開放交貨便下單，因此需自費60元運費，且限711取貨，未來如果有開放新的下單方式會再更新～</p>
+      </div>
     </div>
     <hr>
     <div class="qa-text flex justify-between items-center">
       <p class="title">包裝相關 Packaging</p>
-      <img src="{{QaArrowBottomImgSrc}}" alt="arrow-bottom">
+      <img src="{{isExpanded[1] ? QaArrowTopImgSrc : QaArrowBottomImgSrc}}" alt="arrow-bottom" (click)="toggle(1)">
+    </div>
+    <div *ngIf="isExpanded[1]" class="grid grid-cols-10 md:grid-cols-10 xs:grid-cols-1 xxxxxxxxs:grid-cols-1">
+      <div class="col-span-4 md:col-span-4 xs:col-span-1">
+        <!-- 左邊 4 格留白 -->
+      </div>
+      <div class="text col-span-6 md:col-span-6 xs:col-span-1">
+        <p class="sub-title">1 請問購買花束會附包裝嗎？</p>
+        <p>➔ 購買花束都會附包裝紙＋牛奶棉的基本包裝，也可另外加購升級成束口袋！</p>
+      </div>
     </div>
     <hr>
     <div class="qa-text flex justify-between items-center">
       <p class="title">退貨相關 Return</p>
-      <img src="{{QaArrowBottomImgSrc}}" alt="arrow-bottom">
+      <img src="{{isExpanded[2] ? QaArrowTopImgSrc : QaArrowBottomImgSrc}}" alt="arrow-bottom" (click)="toggle(2)">
+    </div>
+    <div *ngIf="isExpanded[2]" class="grid grid-cols-10 md:grid-cols-10 xs:grid-cols-1 xxxxxxxxs:grid-cols-1">
+      <div class="col-span-4 md:col-span-4 xs:col-span-1">
+        <!-- 左邊 4 格留白 -->
+      </div>
+      <div class="text col-span-6 md:col-span-6 xs:col-span-1">
+        <p class="sub-title">1 不滿意的話可以退貨嗎？</p>
+        <p>➔ 每件商品我們都會用心製作，但手作商品無法100％無瑕疵，完美主義者請三思！如非寄錯商品，我們不開放退貨！</p>
+      </div>
     </div>
     <hr>
     <div class="qa-text flex justify-between items-center">
       <p class="title">廢布相關 Fabric</p>
-      <img src="{{QaArrowBottomImgSrc}}" alt="arrow-bottom">
+      <img src="{{isExpanded[3] ? QaArrowTopImgSrc : QaArrowBottomImgSrc}}" alt="arrow-bottom" (click)="toggle(3)">
+    </div>
+    <div *ngIf="isExpanded[3]" class="grid grid-cols-10 md:grid-cols-10 xs:grid-cols-1 xxxxxxxxs:grid-cols-1">
+      <div class="col-span-4 md:col-span-4 xs:col-span-1">
+        <!-- 左邊 4 格留白 -->
+      </div>
+      <div class="text col-span-6 md:col-span-6 xs:col-span-1">
+        <p class="sub-title">1 請問設計師款的布料來源是什麼？</p>
+        <p class="mb-text">➔ 設計師款的布料來源為實踐大學服裝設計學系製作衣服所剩的乾淨廢棄布料，環保至上～～</p>
+        <p class="sub-title">2 請問客製款的布料要在什麼時間寄出？</p>
+        <p class="mb-text">➔ 客製款的布料需要在預約到的客製時間的前三日寄出</p>
+        <p class="sub-title">3 客製款提供的布料有什麼限制嗎？</p>
+        <p>➔ 客製款需要提供清洗乾淨的衣物或布料，不能是貼身衣物、針織、彈性材質，且一朵花至少要450 x 450mm！</p>
+      </div>
     </div>
   </div>
 </div>

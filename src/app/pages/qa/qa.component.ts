@@ -1,9 +1,10 @@
 import { Component, HostListener } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-qa',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './qa.component.html',
   styleUrl: './qa.component.scss'
 })
@@ -13,9 +14,15 @@ export class QaComponent {
   QaBannerImgSrc = '../../../assets/images/qa/1920-qa-banner.png'
   QaArrowBottomImgSrc = '../../../assets/images/qa/1920-qa-arrow-bottom.png'
   QaArrowTopImgSrc = '../../../assets/images/qa/1920-qa-arrow-top.png'
+  isExpanded: boolean[] = [false, false, false, false]; // 狀態陣列，用來控制每個 QA 區塊的展開與否
 
   constructor() {
     this.updateImageSource();
+  }
+
+  toggle(index: number): void {
+    // 更新展開狀態
+    this.isExpanded[index] = !this.isExpanded[index];
   }
 
   @HostListener('window:resize', ['$event'])

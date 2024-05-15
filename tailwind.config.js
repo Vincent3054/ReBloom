@@ -6,6 +6,10 @@ module.exports = {
   mode: 'jit',
   theme: {
     extend: {
+      screens: {
+        'xs': '390px',
+        'xxxxxxxxs': '0px',
+      },
       width: {
         '452': '452px',
         '171': '171px',
