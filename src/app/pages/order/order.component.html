@@ -6,70 +6,150 @@
   </div>
   <div class="container-title">
     <div class="flex justify-center space-x-4">
-      <button class="title-btn designer-btn">設計師款</button>
-      <button class="title-btn minimalist-btn">客製款</button>
+      <button class="title-btn" [ngClass]="{'designer-btn': activeStyle === 'minimalist', 'minimalist-btn': activeStyle === 'designer'}" (click)="setActiveStyle('designer')">設計師款</button>
+      <button class="title-btn right-ml-btn" [ngClass]="{'minimalist-btn': activeStyle === 'minimalist', 'designer-btn': activeStyle === 'designer'}" (click)="setActiveStyle('minimalist')">客製款</button>
     </div>
   </div>
   <hr class="my-4">
-  <div class="container-top-content flex items-center justify-center h-full">
-    <img src="../../../../assets/images/order/1920-order-top-img-1.png" alt="banner-1" class="max-h-full">
-  </div>
-  <div class="container-mid-content flex items-center justify-center h-full">
-    <img src="../../../../assets/images/order/1920-order-mid-img-1.png" alt="banner-1" class="max-h-full">
-  </div>
-  <div class="container-bottom-content">
-    <div class="leading-relaxed space-y-4">
-      <p class="title mb-4">設計師款 Designer Style Notice</p>
-      <div class="text">
-        <p>1 設計師款採認領製，下單前可以到我們的限時動態看看有沒有喜歡的花色，也可以私訊要細節圖！</p>
-        <p>2 設計師款的布料來源為實踐大學服裝設計學系製作衣服所剩的乾淨廢棄布料，環保至上～～</p>
-        <p>3 運費為60元 限711出貨！</p>
-        <p>4 商品皆附包裝紙＋牛奶棉的基本包裝，也可另外加購升級成束口袋！</p>
-        <p>5 每件商品我們都會用心製作，但手作商品無法100％無瑕疵，完美主義者請三思！</p>
+    <div *ngIf="activeStyle === 'designer'">
+      <div class="container-top-content flex items-center justify-center h-full">
+        <img src="../../../../assets/images/order/1920-order-top-img-1.png" alt="banner-1" class="max-h-full">
+      </div>
+      <div class="container-mid-content flex items-center justify-center h-full">
+        <img src="../../../../assets/images/order/1920-order-mid-img-1.png" alt="banner-1" class="max-h-full">
+      </div>
+      <div class="container-bottom-content">
+        <div class="leading-relaxed space-y-4">
+          <p class="title mb-4">設計師款 購買須知 Designer Style Notice</p>
+          <div class="text">
+            <p>¹ 設計師款採認領製，下單前可以到我們的限時動態看看有沒有喜歡的花色，也可以私訊要細節圖！</p>
+            <p>² 設計師款的布料來源為實踐大學服裝設計學系製作衣服所剩的乾淨廢棄布料，環保至上～～</p>
+            <p>³ 運費為60元 限711出貨！</p>
+            <p>⁴ 商品皆附包裝紙＋牛奶棉的基本包裝，也可另外加購升級成束口袋！</p>
+            <p>⁵ 每件商品我們都會用心製作，但手作商品無法100％無瑕疵，完美主義者請三思！</p>
+            </div>
+          <button class="btn rounded-full font-bold hover:bg-[#6f7a4f] transition-colors">下單設計師款 >>></button>
         </div>
-      <button class="btn rounded-full font-bold hover:bg-[#6f7a4f] transition-colors">下單設計師款 >>></button>
+      </div>
+    </div>
+  <div *ngIf="activeStyle === 'minimalist'">
+    <div class="container-top-content flex items-center justify-center h-full">
+      <img src="../../../../assets/images/order/1920-order-top-img-2.png" alt="banner-1" class="max-h-full">
+    </div>
+    <div class="container-mid-content flex items-center justify-center h-full">
+      <img src="../../../../assets/images/order/1920-order-mid-img-2.png" alt="banner-1" class="max-h-full">
+    </div>
+    <div class="container-bottom-content">
+      <div class="leading-relaxed space-y-4">
+        <p class="title mb-4">客製款 購買須知 Customized Style Notice</p>
+        <div class="text">
+          <p>¹ 客製化需提供清洗乾淨的衣物</p>
+          <p>➔ 不能是貼身衣物、針織、彈性材質</p>
+          <p>➔ 一朵花至少450 x 450mm</p>
+          <p>➔ 需要在客製化時間的前三日寄出（寄件資訊會私訊跟您說！）</p>
+          <p>² 試營運期間每人限購一朵小花（加購區不限）</p>
+          <p>³ 運費為60元 限711出貨！</p>
+          <p>⁴ 客製款僅包含布料提供及款式選擇，不含選擇布料對應的位子</p>
+          <p>➔ 簡單來說就是布料寄給我們之後會幫你做顏色配置啦！請相信我們～</p>
+          <p>⁵ 商品皆附包裝紙＋牛奶棉的基本包裝，也可另外加購升級成束口袋！</p>
+          <p>⁶ 每件商品我們都會用心製作，但手作商品無法100％無瑕疵，完美主義者請三思！</p>
+        </div>
+        <button class="btn rounded-full font-bold hover:bg-[#6f7a4f] transition-colors">預約客製款 >>></button>
+      </div>
     </div>
   </div>
 </div>
-<div class="content mx-auto block md:hidden">
-  <div class="container-banner md:px-28 px-0">
-  </div>
-  <div class="banner responsive-banner w-full">
-    <img src="../../../../assets/images/order/768-order-banner-1.png" alt="banner-1">
-  </div>
-  <div class="title-btn flex justify-center space-x-4">
-    <button class="title-btn designer-btn">設計師款</button>
-    <button class="title-btn minimalist-btn">客製款</button>
-  </div>
-  <hr class="my-4">
-  <div class="container-top-content">
-    <p class="title mb-4">設計師款 Designer Style</p>
-    <div class="text">
-      <p>我們重新定義廢棄布料與花店之間的關係，以實踐環境友善的廢棄布料設計了海芋、小樹苗、小蒼蘭、桔梗花、鬱金香、康乃馨、玫瑰花、向日葵、小雛菊九種花束款式，讓您在選購禮品時，多一個環保的選擇！同時透過廢棄布料的使用，減少垃圾產出，降低對地球生態的負擔，將永續概念融入生活的魅力傳遞給大眾。</p>
+<div *ngIf="activeStyle === 'designer'">
+  <div class="content mx-auto block md:hidden">
+    <div class="container-banner md:px-28 px-0">
     </div>
-    <img class="flex items-center justify-center h-full"src="../../../../assets/images/order/768-order-top-img-1.png" alt="banner-1" class="max-h-full">
-  </div>
-  <div class="container-mid-content">
-    <p class="title mb-4">設計師款 製作流程</p>
-    <p class="title mb-4">Designer Style Production Process</p>
-    <p class="title-remark mb-4">*設計師款採認領製，下單前可以到我們的限時動態看看有沒有喜歡的花色，也可以私訊要細節圖！</p>
-    <div class="flex items-center justify-center h-full">
-      <img src="../../../../assets/images/order/768-order-mid-img-1.png" alt="banner-1" class="max-h-full">
+    <div class="banner responsive-banner w-full">
+      <img src="../../../../assets/images/order/768-order-banner-1.png" alt="banner-1">
     </div>
+    <div class="title-btn flex justify-center space-x-4">
+      <button class="title-btn minimalist-btn" (click)="setActiveStyle('designer')">設計師款</button>
+      <button class="title-btn designer-btn right-ml-btn" (click)="setActiveStyle('minimalist')">客製款</button>
     </div>
-  <div class="container-bottom-content">
-    <div class="leading-relaxed space-y-4">
-      <p class="title mb-4">設計師款 購買須知 Designer Style Notice</p>
+    <hr class="my-4">
+    <div class="container-top-content">
+      <p class="title mb-4">設計師款 Designer Style</p>
       <div class="text">
-        <p>1 設計師款採認領製，下單前可以到我們的限時動態看看有沒有喜歡的花色，也可以私訊要細節圖！</p>
-        <p>2 設計師款的布料來源為實踐大學服裝設計學系製作衣服所剩的乾淨廢棄布料，環保至上～～</p>
-        <p>3 運費為60元 限711出貨！</p>
-        <p>4 商品皆附包裝紙＋牛奶棉的基本包裝，也可另外加購升級成束口袋！</p>
-        <p>5 每件商品我們都會用心製作，但手作商品無法100％無瑕疵，完美主義者請三思！</p>
+        <p>我們重新定義廢棄布料與花店之間的關係，以實踐環境友善的廢棄布料設計了海芋、小樹苗、小蒼蘭、桔梗花、鬱金香、康乃馨、玫瑰花、向日葵、小雛菊九種花束款式，讓您在選購禮品時，多一個環保的選擇！同時透過廢棄布料的使用，減少垃圾產出，降低對地球生態的負擔，將永續概念融入生活的魅力傳遞給大眾。</p>
       </div>
-      <div class="flex justify-end">
-        <button class="btn rounded-full font-bold hover:bg-[#6f7a4f] transition-colors">下單設計師款 >>></button>
+      <img class="flex items-center justify-center h-full"src="../../../../assets/images/order/768-order-top-img-1.png" alt="banner-1" class="max-h-full">
+    </div>
+    <div class="container-mid-content">
+      <p class="title mb-4">設計師款 製作流程</p>
+      <p class="title mb-4">Designer Style Production Process</p>
+      <p class="title-remark">*設計師款採認領製，下單前可以到我們的限時動態看看有沒有喜歡的花色，也可以私訊要細節圖！</p>
+      <div class="flex items-center justify-center h-full">
+        <img src="{{OrderMid1ImgSrc}}" alt="banner-1" class="max-h-full">
+      </div>
+      </div>
+    <div class="container-bottom-content">
+      <div class="leading-relaxed space-y-4">
+        <p class="title mb-4">設計師款 購買須知 Designer Style Notice</p>
+        <div class="text">
+          <p>1 設計師款採認領製，下單前可以到我們的限時動態看看有沒有喜歡的花色，也可以私訊要細節圖！</p>
+          <p>2 設計師款的布料來源為實踐大學服裝設計學系製作衣服所剩的乾淨廢棄布料，環保至上～～</p>
+          <p>3 運費為60元 限711出貨！</p>
+          <p>4 商品皆附包裝紙＋牛奶棉的基本包裝，也可另外加購升級成束口袋！</p>
+          <p>5 每件商品我們都會用心製作，但手作商品無法100％無瑕疵，完美主義者請三思！</p>
+        </div>
+        <div class="flex justify-end">
+          <button class="btn rounded-full font-bold hover:bg-[#6f7a4f] transition-colors">下單設計師款 >>></button>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
+<div *ngIf="activeStyle === 'minimalist'">
+  <div class="content mx-auto block md:hidden">
+    <div class="container-banner md:px-28 px-0">
+    </div>
+    <div class="banner responsive-banner w-full">
+      <img src="../../../../assets/images/order/768-order-banner-1.png" alt="banner-1">
+    </div>
+    <div class="title-btn flex justify-center space-x-4">
+      <button class="title-btn designer-btn" (click)="setActiveStyle('designer')">設計師款</button>
+      <button class="title-btn minimalist-btn right-ml-btn" (click)="setActiveStyle('minimalist')">客製款</button>
+    </div>
+    <hr class="my-4">
+    <div class="container-top-content">
+      <p class="title mb-4">客製款 Customized Style</p>
+      <div class="text">
+        <p>我們相信每件衣物與布料都是一段時光的見證，蘊藏著溫馨的回憶。若你想以「送花」作為表達愛意的方式，我們提供能夠「永久保存」的客製化手作布花，將你喜愛的衣物做成花束，以保留氣味，作為想念對方時的寄託物。</p>
+      </div>
+      <img class="flex items-center justify-center h-full"src="../../../../assets/images/order/768-order-top-img-2.png" alt="banner-1" class="max-h-full">
+    </div>
+    <div class="container-mid-content">
+      <p class="title mb-4">客製款 下單流程</p>
+      <p class="title mb-4">Customized Style Ordering Process</p>
+      <div class="flex items-center justify-center h-full">
+        <img src="{{OrderMid2ImgSrc}}" alt="banner-1" class="max-h-full">
+      </div>
+      </div>
+    <div class="container-bottom-content">
+      <div class="leading-relaxed space-y-4">
+        <p class="title mb-4">客製款 購買須知 Customized Style Notice</p>
+        <div class="text">
+          <p>¹ 客製化需提供清洗乾淨的衣物</p>
+          <p>➔ 不能是貼身衣物、針織、彈性材質</p>
+          <p>➔ 一朵花至少450 x 450mm</p>
+          <p>➔ 需要在客製化時間的前三日寄出（寄件資訊會私訊跟您說！）</p>
+          <p>² 試營運期間每人限購一朵小花（加購區不限）</p>
+          <p>³ 運費為60元 限711出貨！</p>
+          <p>⁴ 客製款僅包含布料提供及款式選擇，不含選擇布料對應的位子</p>
+          <p>➔ 簡單來說就是布料寄給我們之後會幫你做顏色配置啦！請相信我們～</p>
+          <p>⁵ 商品皆附包裝紙＋牛奶棉的基本包裝，也可另外加購升級成束口袋！</p>
+          <p>⁶ 每件商品我們都會用心製作，但手作商品無法100％無瑕疵，完美主義者請三思！</p>
+        </div>
+        <div class="flex justify-end">
+          <button class="btn rounded-full font-bold hover:bg-[#6f7a4f] transition-colors">預約客製款 >>></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
