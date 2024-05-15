@@ -34,15 +34,12 @@ export class OrderComponent {
 
   // 根據螢幕寬度更新圖片來源
   updateImageSource() {
-    if (window.innerWidth <= 430) {
-      this.OrderMid1ImgSrc = '../../../assets/images/order/430-order-mid-img-1.png';
-      this.OrderMid2ImgSrc = '../../../assets/images/order/430-order-mid-img-2.png';
-    } else if (window.innerWidth <= 390) {
+    if (window.innerWidth <= 390) {
       this.OrderMid1ImgSrc = '../../../assets/images/order/390-order-mid-img-1.png';
       this.OrderMid2ImgSrc = '../../../assets/images/order/390-order-mid-img-2.png';
-    } else if (window.innerWidth <= 768) {
-      this.OrderMid1ImgSrc = '../../../assets/images/order/768-order-mid-img-1.png';
-      this.OrderMid2ImgSrc = '../../../assets/images/order/768-order-mid-img-2.png';
+    } else if (window.innerWidth <= 430) {
+      this.OrderMid1ImgSrc = '../../../assets/images/order/430-order-mid-img-1.png';
+      this.OrderMid2ImgSrc = '../../../assets/images/order/430-order-mid-img-2.png';
     } else {
       this.OrderMid1ImgSrc = '../../../assets/images/order/768-order-mid-img-1.png';
       this.OrderMid2ImgSrc = '../../../assets/images/order/768-order-mid-img-2.png';

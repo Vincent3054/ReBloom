@@ -19,3 +19,9 @@
 *{
   font-family: 'Inter', sans-serif;
 }
+
+@media (min-width: 1920px) {
+  .container {
+      max-width: 1920px;
+  }
+}
