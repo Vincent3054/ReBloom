@@ -29,6 +29,13 @@ export const routes: Routes = [
         //   breadcrumb: BREADCRUMB.HOME,
         // },
       },
+      {
+        path: STATIC_ROUTES.QA,
+        loadComponent: () =>
+          import('./pages/qa/qa.component').then(
+            (c) => c.QaComponent
+          ),
+      }
     ]
   }
 ];

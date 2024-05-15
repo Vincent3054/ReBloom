@@ -122,6 +122,12 @@
   }
 }
 
+@media (max-width: 430px) {
+  .container-header {
+    height: 54px;
+  }
+}
+
 @media (max-width: 400px) {
   .container-header{
     padding: 0.5rem 0.5rem;
@@ -138,5 +144,11 @@
       max-height: 46px;
       max-width: 46px;
     }
+  }
+}
+
+@media (max-width: 390px) {
+  .container-header {
+    height: 44px;
   }
 }
