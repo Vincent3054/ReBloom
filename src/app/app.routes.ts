@@ -1,3 +1,4 @@
+import { AboutTeamsComponent } from './pages/about-teams/about-teams.component';
 import { AboutStoryComponent } from './pages/about-story/about-story.component';
 import { Routes } from '@angular/router';
 import { LayoutCardComponent } from './layouts/main/layout-card/layout-card.component';
@@ -28,14 +29,18 @@ export const routes: Routes = [
           ),
       },
       {
+        path: STATIC_ROUTES.AboutTeams,
+        loadComponent: () =>
+          import('./pages/about-teams/about-teams.component').then(
+            (c) => c.AboutTeamsComponent
+          ),
+      },
+      {
         path: `${STATIC_ROUTES.Order}/:style`,
         loadComponent: () =>
           import('./pages/order/order.component').then(
             (c) => c.OrderComponent
           ),
-        // data: {
-        //   breadcrumb: BREADCRUMB.HOME,
-        // },
       },
       {
         path: STATIC_ROUTES.QA,
