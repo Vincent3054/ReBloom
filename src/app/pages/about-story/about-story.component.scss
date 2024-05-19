@@ -1,0 +1,286 @@
+.responsive-banner img {
+  width: 100%;
+  height: auto;
+}
+
+.container-title{
+  margin: 10px 0px;
+}
+
+.title-btn {
+  border-radius: 35.56px;
+  font-size: 28px;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  outline: none;
+  margin: 5px 0px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.designer-btn{
+  width: 200px;
+  color: #838D52;
+  border: 1px solid #838D52;
+}
+
+.minimalist-btn {
+  width: 200px;
+  border: none;
+  background-color: #838D52;
+  color: white;
+}
+
+.right-ml-btn{
+  margin-left: 15%;
+}
+
+hr{
+  color: #838D52;
+  margin: 0px 3%;
+}
+
+.container-body{
+  padding: 50px 0%;
+  h2 {
+    font-size: 37px;
+    color: #838D52;
+    font-weight: 900;
+  }
+
+  p {
+    font-size: 21px;
+    line-height: 2;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+
+  .img-box{
+    padding: 5%;
+
+  }
+  .text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 確保內容垂直居中 */
+    height: 100%; /* 或設定為所需的高度 */
+  }
+
+  .title {
+    margin-bottom: 50px; /* 設定標題和內文之間的距離 */
+  }
+}
+
+.container-footer{
+  padding-bottom: 40px;
+  .btn{
+    width: 480px;
+    color: white;
+    background-color: #838D52;
+    border-radius: 35.56px;
+    font-size: 27px;
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container-body{
+    padding: 20px 0%;
+
+    .btn{
+      font-size: 20px;
+      width: 240px;
+    }
+
+    h2 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 14px;
+    }
+
+    .title {
+      margin-bottom: 25px; /* 設定標題和內文之間的距離 */
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .title-btn {
+    font-size: 17px;
+    padding: 0.25rem 1rem;
+  }
+
+  .designer-btn{
+    width: 108px;
+  }
+  .minimalist-btn {
+    width: 108px;
+  }
+
+  .container-body{
+    padding: 15px 0%;
+
+    h2 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 12px;
+    }
+
+    .title {
+      margin-bottom: 15px; /* 設定標題和內文之間的距離 */
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .btn{
+    width: 140px;
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  .container-body{
+    padding: 5px 0%;
+
+    h2 {
+      font-size: 15px;
+    }
+    p {
+      font-size: 9px;
+    }
+
+    .title {
+      margin-bottom: 10px; /* 設定標題和內文之間的距離 */
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .container-title{
+    margin: 20px 0px;
+  }
+
+  .title-btn {
+    font-size: 30px;
+    width: 190px;
+  }
+  .right-ml-btn{
+    margin-left: 8%;
+  }
+
+  hr{
+    margin: 0px 5%;
+  }
+
+  .container-body{
+    padding: 0px 5%;
+    margin-top: 20px;
+
+    .title{
+      line-height: 1.25;
+    }
+    .img-box{
+      padding: 0;
+      margin : 25px 0px;
+    }
+    h2 {
+      font-size: 32px;
+    }
+    p {
+      line-height: 1.5;
+      font-size: 24px;
+    }
+    .story{
+      padding: 25px 0px;
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .container-title{
+    margin: 15px 0px;
+  }
+
+  .title-btn {
+    font-size: 18px;
+    width: 110px;
+  }
+  .right-ml-btn{
+    margin-left: 8%;
+  }
+
+  .container-body{
+    margin-top: 15px;
+    .img-box{
+      padding: 0;
+      margin : 25px 0px;
+    }
+    h2 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 14px;
+    }
+    .story{
+      padding: 10px 0px;
+    }
+  }
+  .container-footer{
+    padding-bottom: 10px;
+    .btn{
+      margin-top: 0px;
+      width: 270px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .container-title{
+    margin: 10px 0px;
+  }
+
+  .title-btn {
+    font-size: 16px;
+    width: 100px;
+  }
+  .right-ml-btn{
+    margin-left: 5%;
+  }
+
+  .container-body{
+    margin-top: 10px;
+    .img-box{
+      padding: 0;
+      margin : 15px 0px;
+    }
+    h2 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 12px;
+    }
+    .story{
+      padding: 5px 0px;
+    }
+  }
+  .container-footer{
+    padding-bottom: 10px;
+    .btn{
+      margin-top: 0px;
+      width: 244px;
+      font-size: 14px;
+    }
+  }
+}

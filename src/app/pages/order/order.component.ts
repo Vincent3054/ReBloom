@@ -1,4 +1,3 @@
-import { SplitmediaTextComponent } from './../../shared/compoents/splitmedia-text/splitmedia-text.component';
 import { Component, HostListener, OnInit } from '@angular/core';
 import { TabViewModule } from 'primeng/tabview';
 import { ImageModule } from 'primeng/image';
@@ -9,12 +8,10 @@ import { ActivatedRoute } from '@angular/router';
   selector: 'app-order',
   standalone: true,
   imports: [
-    SplitmediaTextComponent,
     TabViewModule,
     ImageModule,
     CommonModule
   ],
-
   templateUrl: './order.component.html',
   styleUrl: './order.component.scss'
 })
