@@ -1,3 +1,4 @@
+import { AboutStoryComponent } from './pages/about-story/about-story.component';
 import { Routes } from '@angular/router';
 import { LayoutCardComponent } from './layouts/main/layout-card/layout-card.component';
 import { STATIC_ROUTES } from './core/guards/routes.constant';
@@ -18,6 +19,13 @@ export const routes: Routes = [
         data: {
           breadcrumb: BREADCRUMB.HOME,
         },
+      },
+      {
+        path: STATIC_ROUTES.AboutStory,
+        loadComponent: () =>
+          import('./pages/about-story/about-story.component').then(
+            (c) => c.AboutStoryComponent
+          ),
       },
       {
         path: `${STATIC_ROUTES.Order}/:style`,

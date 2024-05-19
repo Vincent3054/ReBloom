@@ -7,10 +7,10 @@
   <div class="flex items-center flex-grow">
     <nav class="ml-auto hidden md:block">
       <ul class="flex gap-x-8">
-        <li><a href="#" class="link">關於ReBloom</a></li>
+        <li><a [routerLink]="['/about-story']" routerLinkActive="active" class="link">關於ReBloom</a></li>
         <li><a href="#" class="link">布花圖鑑</a></li>
-        <li><a href="#" class="link">訂購專屬花束</a></li>
-        <li><a href="#" class="link">Q & A</a></li>
+        <li><a [routerLink]="['/', STATIC_ROUTES.Order,'designer']" routerLinkActive="active" class="link">訂購專屬花束</a></li>
+        <li><a [routerLink]="['/', STATIC_ROUTES.QA]" routerLinkActive="active" class="link">Q & A</a></li>
       </ul>
     </nav>
     <img class="ml-9 hidden md:block" src="../../../assets/images/layouts/ig.png" alt="Instagram">
@@ -24,7 +24,7 @@
   <ul class="menu-list">
     <li><span class="menu-heading">| 關於ReBloom |</span></li>
     <li><a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="navigateAndCloseMenu()">首頁</a></li>
-    <li><a [routerLink]="['/brand-story']" routerLinkActive="active" (click)="navigateAndCloseMenu()">品牌故事</a></li>
+    <li><a [routerLink]="['/about-story']" routerLinkActive="active" (click)="navigateAndCloseMenu()">品牌故事</a></li>
     <li><a [routerLink]="['/team']" routerLinkActive="active" (click)="navigateAndCloseMenu()">製作團隊</a></li>
     <li><a [routerLink]="['/flower-features']" routerLinkActive="active" (click)="navigateAndCloseMenu()">布花特色</a></li>
     <li><span class="menu-heading">| 布花圖鑑 |</span></li>
