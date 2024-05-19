@@ -12,15 +12,15 @@ export const routes: Routes = [
       {
         path: STATIC_ROUTES.HOME,
         loadComponent: () =>
-          import('./pages/page-home/page-home.component').then(
-            (c) => c.PageHomeComponent
+          import('./pages/home/home.component').then(
+            (c) => c.HomeComponent
           ),
         data: {
           breadcrumb: BREADCRUMB.HOME,
         },
       },
       {
-        path: STATIC_ROUTES.Order,
+        path: `${STATIC_ROUTES.Order}/:style`,
         loadComponent: () =>
           import('./pages/order/order.component').then(
             (c) => c.OrderComponent

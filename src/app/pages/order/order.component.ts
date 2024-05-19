@@ -1,8 +1,9 @@
 import { SplitmediaTextComponent } from './../../shared/compoents/splitmedia-text/splitmedia-text.component';
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { TabViewModule } from 'primeng/tabview';
 import { ImageModule } from 'primeng/image';
 import { CommonModule } from '@angular/common'; // 導入 CommonModule
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-order',
@@ -17,13 +18,27 @@ import { CommonModule } from '@angular/common'; // 導入 CommonModule
   templateUrl: './order.component.html',
   styleUrl: './order.component.scss'
 })
-export class OrderComponent {
-  activeStyle: string = 'designer';
+export class OrderComponent implements OnInit {
+  // activeStyle: string = 'designer';
   OrderMid1ImgSrc = '../../../assets/images/order/768-order-mid-img-1.png';
   OrderMid2ImgSrc = '../../../assets/images/order/768-order-mid-img-2.png';
+  activeStyle: 'designer' | 'minimalist' = 'designer';
 
-  constructor() {
+  constructor(private route: ActivatedRoute) {
     this.updateImageSource();
+  }
+
+  ngOnInit() {
+    this.route.paramMap.subscribe(params => {
+      const style = params.get('style');
+      if (style === 'designer' || style === 'minimalist') {
+        this.activeStyle = style;
+      }
+    });
+  }
+
+  setActiveStyle(style: 'designer' | 'minimalist') {
+    this.activeStyle = style;
   }
 
   @HostListener('window:resize', ['$event'])
@@ -44,8 +59,5 @@ export class OrderComponent {
       this.OrderMid1ImgSrc = '../../../assets/images/order/768-order-mid-img-1.png';
       this.OrderMid2ImgSrc = '../../../assets/images/order/768-order-mid-img-2.png';
     }
-  }
-  setActiveStyle(style: string) {
-    this.activeStyle = style;
   }
 }
