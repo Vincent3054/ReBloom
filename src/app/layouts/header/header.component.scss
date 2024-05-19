@@ -5,6 +5,9 @@
   align-items: center;
   padding: 1rem 2rem;
   height: 80px;
+  position: relative; /* 原始樣式 */
+  z-index: 1001; /* 確保header在頂層 */
+
   ul {
     display: flex;
     justify-content: center;
@@ -40,6 +43,16 @@
   }
 }
 
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1001; /* 確保header在頂層 */
+  background-color: #fff;
+}
+
+
 .header-logo{
   img {
     width: 144px;
@@ -52,6 +65,70 @@
     width: 87px;
     height: 87px;
   }
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  height: 80px;
+  z-index: 999; /* 確保header在頂層 */
+}
+
+.full-screen-menu {
+  position: fixed;
+  top: 75px; /* 與header高度一致 */
+  left: 0;
+  width: 100%;
+  height: calc(100% - 75px); /* 減去header高度 */
+  background-color: white;
+  z-index: 1000; /* 確保菜單在header下面 */
+  display: flex;
+  flex-direction: column; /* 垂直排列 */
+  align-items: center;
+  padding-top: 20px; /* 添加一些內邊距讓內容不要緊貼頂部 */
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  line-height: 1.5;
+  width: 100%; /* 使列表寬度為滿版 */
+}
+
+.menu-list li {
+  margin: 10px 0;
+}
+
+.menu-list a,
+.menu-list span.menu-heading {
+  color: #838D52;
+  text-decoration: none;
+  transition: color 0.3s, background-color 0.3s, border-radius 0.3s;
+  font-size: 27px;
+  display: block; /* 使元素顯示為塊級元素 */
+  padding: 10px 20px;
+  border-radius: 50px; /* 初始邊角 */
+  box-sizing: border-box; /* 確保寬度計算包括內邊距 */
+}
+
+.menu-list a:hover {
+  border: 1px solid #838D52;
+  border-radius: 50px; /* 圓角長邊 */
+}
+
+.menu-list a:active,
+.menu-list a.active {
+  background-color: #838D52;
+  color: white;
+}
+
+.menu-list span.menu-heading {
+  font-size: 32px;
+  font-weight: bold;
 }
 
 
@@ -88,6 +165,10 @@
 }
 
 @media (max-width: 600px) {
+  .full-screen-menu {
+    top: 80px; /* 與header高度一致 */
+    height: calc(100% - 80px); /* 減去header高度 */
+  }
   .container-header{
     margin-bottom: 0px;
   }
@@ -123,8 +204,18 @@
 }
 
 @media (max-width: 430px) {
+  .full-screen-menu {
+    top: 54px; /* 與header高度一致 */
+    height: calc(100% - 54px); /* 減去header高度 */
+  }
   .container-header {
     height: 54px;
+  }
+  .hamburger{
+    img{
+      max-height: 49px;
+      max-width: 49px;
+    }
   }
 }
 
@@ -148,7 +239,17 @@
 }
 
 @media (max-width: 390px) {
+  .full-screen-menu {
+    top: 44px; /* 與header高度一致 */
+    height: calc(100% - 44px); /* 減去header高度 */
+  }
   .container-header {
     height: 44px;
+  }
+  .hamburger{
+    img{
+      max-height: 44px;
+      max-width: 44px;
+    }
   }
 }
