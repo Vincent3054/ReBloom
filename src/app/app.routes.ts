@@ -1,5 +1,3 @@
-import { AboutTeamsComponent } from './pages/about-teams/about-teams.component';
-import { AboutStoryComponent } from './pages/about-story/about-story.component';
 import { Routes } from '@angular/router';
 import { LayoutCardComponent } from './layouts/main/layout-card/layout-card.component';
 import { STATIC_ROUTES } from './core/guards/routes.constant';
@@ -33,6 +31,13 @@ export const routes: Routes = [
         loadComponent: () =>
           import('./pages/about-teams/about-teams.component').then(
             (c) => c.AboutTeamsComponent
+          ),
+      },
+      {
+        path: STATIC_ROUTES.AboutFeature,
+        loadComponent: () =>
+          import('./pages/about-feature/about-feature.component').then(
+            (c) => c.AboutFeatureComponent
           ),
       },
       {

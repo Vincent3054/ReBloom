@@ -95,7 +95,6 @@
   padding: 0;
   margin: 0;
   text-align: center;
-  // line-height: 1.5;
   width: 100%; /* 使列表寬度為滿版 */
 }
 
@@ -108,11 +107,14 @@
   color: #838D52;
   text-decoration: none;
   transition: color 0.3s, background-color 0.3s, border-radius 0.3s;
-  font-size: 27px;
   display: block; /* 使元素顯示為塊級元素 */
-  padding: 10px 20px;
+  padding: 20px 20px;
   border-radius: 50px; /* 初始邊角 */
   box-sizing: border-box; /* 確保寬度計算包括內邊距 */
+}
+
+.menu-list a {
+  font-size: 27px;
 }
 
 .menu-list a:hover {
@@ -130,7 +132,6 @@
   font-size: 32px;
   font-weight: bold;
 }
-
 
 @media (max-width: 1140px) {
   .container-header ul li:not(:first-child) {
@@ -217,6 +218,18 @@
       max-width: 49px;
     }
   }
+  .menu-list a,
+  .menu-list span.menu-heading {
+    padding: 10px 20px;
+  }
+
+  .menu-list span.menu-heading {
+    font-size: 18px;
+  }
+
+  .menu-list a{
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -251,5 +264,13 @@
       max-height: 44px;
       max-width: 44px;
     }
+  }
+
+  .menu-list span.menu-heading {
+    font-size: 16px;
+  }
+
+  .menu-list a{
+    font-size: 14px;
   }
 }

@@ -4,5 +4,6 @@ export const STATIC_ROUTES = {
   Order: 'order',
   AboutStory: 'about-story',
   AboutTeams: 'about-teams',
+  AboutFeature: 'about-feature',
   QA: 'qa'
 }
