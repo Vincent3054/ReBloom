@@ -23,7 +23,6 @@
 <div *ngIf="isMenuOpen" class="full-screen-menu">
   <ul class="menu-list">
     <li><span class="menu-heading">| 關於ReBloom |</span></li>
-    <li><a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="navigateAndCloseMenu()">首頁</a></li>
     <li><a [routerLink]="['/about-story']" routerLinkActive="active" (click)="navigateAndCloseMenu()">品牌故事</a></li>
     <li><a [routerLink]="['/team']" routerLinkActive="active" (click)="navigateAndCloseMenu()">製作團隊</a></li>
     <li><a [routerLink]="['/flower-features']" routerLinkActive="active" (click)="navigateAndCloseMenu()">布花特色</a></li>
