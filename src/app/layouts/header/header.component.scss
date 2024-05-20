@@ -87,7 +87,6 @@
   display: flex;
   flex-direction: column; /* 垂直排列 */
   align-items: center;
-  padding-top: 20px; /* 添加一些內邊距讓內容不要緊貼頂部 */
 }
 
 .menu-list {
@@ -99,7 +98,7 @@
 }
 
 .menu-list li {
-  margin: 10px 0;
+  // margin: 10px 0;
 }
 
 .menu-list a,
@@ -108,7 +107,7 @@
   text-decoration: none;
   transition: color 0.3s, background-color 0.3s, border-radius 0.3s;
   display: block; /* 使元素顯示為塊級元素 */
-  padding: 20px 20px;
+  padding: 10px 10px;
   border-radius: 50px; /* 初始邊角 */
   box-sizing: border-box; /* 確保寬度計算包括內邊距 */
 }
