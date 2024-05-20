@@ -14,7 +14,7 @@ export class QaComponent {
   QaBannerImgSrc = '../../../assets/images/qa/1920-qa-banner.png'
   QaArrowBottomImgSrc = '../../../assets/images/qa/1920-qa-arrow-bottom.png'
   QaArrowTopImgSrc = '../../../assets/images/qa/1920-qa-arrow-top.png'
-  isExpanded: boolean[] = [false, false, false, false]; // 狀態陣列，用來控制每個 QA 區塊的展開與否
+  isExpanded: boolean[] = [true, false, false, false]; // 狀態陣列，用來控制每個 QA 區塊的展開與否
 
   constructor() {
     this.updateImageSource();
