@@ -7,13 +7,15 @@
   <div class="flex items-center flex-grow">
     <nav class="ml-auto hidden md:block">
       <ul class="flex gap-x-8">
-        <li><a [routerLink]="['/about-story']" routerLinkActive="active" class="link">關於ReBloom</a></li>
-        <li><a href="#" class="link">布花圖鑑</a></li>
+        <li><a [routerLink]="['/', STATIC_ROUTES.AboutStory]" routerLinkActive="active" class="link">關於ReBloom</a></li>
+        <li><a [routerLink]="['/',STATIC_ROUTES.Products,'flowers']" class="link">布花圖鑑</a></li>
         <li><a [routerLink]="['/', STATIC_ROUTES.Order,'designer']" routerLinkActive="active" class="link">訂購專屬花束</a></li>
         <li><a [routerLink]="['/', STATIC_ROUTES.QA]" routerLinkActive="active" class="link">Q & A</a></li>
       </ul>
     </nav>
-    <img class="ml-9 hidden md:block" src="../../../assets/images/layouts/ig.png" alt="Instagram">
+    <a href="https://www.instagram.com/rebloom_studio__?igsh=MmdsZnA2bmhkNzhw&utm_source=qr" target="_blank">
+      <img class="ml-9 hidden md:block" src="../../../assets/images/layouts/ig.png" alt="Instagram">
+    </a>
   </div>
   <div class="hamburger block md:hidden" (click)="toggleMenu()">
     <img class="hamburger" [src]="isMenuOpen ? HeadercloseHamburgerImgSrc : HeaderHamburgerImgSrc" alt="header-hamburger">
@@ -23,12 +25,12 @@
 <div *ngIf="isMenuOpen" class="full-screen-menu">
   <ul class="menu-list">
     <li><span class="menu-heading">| 關於ReBloom |</span></li>
-    <li><a [routerLink]="['/about-story']" routerLinkActive="active" (click)="navigateAndCloseMenu()">品牌故事</a></li>
-    <li><a [routerLink]="['/about-teams']" routerLinkActive="active" (click)="navigateAndCloseMenu()">製作團隊</a></li>
-    <li><a [routerLink]="['/about-feature']" routerLinkActive="active" (click)="navigateAndCloseMenu()">布花特色</a></li>
+    <li><a [routerLink]="['/', STATIC_ROUTES.AboutStory]" routerLinkActive="active" (click)="navigateAndCloseMenu()">品牌故事</a></li>
+    <li><a [routerLink]="['/', STATIC_ROUTES.AboutTeams]" routerLinkActive="active" (click)="navigateAndCloseMenu()">製作團隊</a></li>
+    <li><a [routerLink]="['/', STATIC_ROUTES.AboutFeature]" routerLinkActive="active" (click)="navigateAndCloseMenu()">布花特色</a></li>
     <li><span class="menu-heading">| 布花圖鑑 |</span></li>
-    <li><a [routerLink]="['/small-flowers']" routerLinkActive="active" (click)="navigateAndCloseMenu()">小花區</a></li>
-    <li><a [routerLink]="['/add-ons']" routerLinkActive="active" (click)="navigateAndCloseMenu()">加購區</a></li>
+    <li><a [routerLink]="['/',STATIC_ROUTES.Products,'flowers']" routerLinkActive="active" (click)="navigateAndCloseMenu()">小花區</a></li>
+    <li><a [routerLink]="['/',STATIC_ROUTES.Products,'additional']" routerLinkActive="active" (click)="navigateAndCloseMenu()">加購區</a></li>
     <li><span class="menu-heading">| 訂購專屬花束 |</span></li>
     <li><a [routerLink]="['/', STATIC_ROUTES.Order,'designer']" routerLinkActive="active" (click)="navigateAndCloseMenu()">設計師款</a></li>
     <li><a [routerLink]="['/', STATIC_ROUTES.Order,'minimalist']" routerLinkActive="active" (click)="navigateAndCloseMenu()">客製款</a></li>

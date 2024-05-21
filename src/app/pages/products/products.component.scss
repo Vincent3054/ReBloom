@@ -1,0 +1,281 @@
+.responsive-banner img {
+  width: 100%;
+  height: auto;
+}
+
+.container-title{
+  margin: 20px 0px;
+}
+
+.title-btn {
+  border-radius: 35.56px;
+  font-size: 28px;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  outline: none;
+  margin: 5px 0px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.designer-btn{
+  width: 200px;
+  color: #838D52;
+  border: 1px solid #838D52;
+}
+.minimalist-btn {
+  width: 200px;
+  border: none;
+  background-color: #838D52;
+  color: white;
+}
+.right-ml-btn{
+  margin-left: 25%;
+}
+hr{
+  color: #838D52;
+  margin: 0px 3%;
+}
+
+.container-top-content{
+  padding: 30px 10%;
+  .title{
+    font-size: 26px;
+    color: #838D52;
+    font-weight: 900;
+  }
+  .text{
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+}
+.container-mid-content{
+  padding: 0px 10% 0px 10%;
+  .title{
+    font-size: 26px;
+    color: #838D52;
+    font-weight: 900;
+    margin-bottom: 0px;
+    line-height: 1;
+    margin-bottom: 5px;
+  }
+  .title-remark{
+    font-size: 14px;
+  }
+}
+.container-bottom-content{
+  padding: 0px 10% 0px 10%;
+  .title{
+    font-size: 37px;
+    color: #838D52;
+    font-weight: 900;
+    margin-top: 0px;
+  }
+  .text{
+    font-size: 22px;
+    line-height: 2.5;
+    font-weight: 400;
+    text-align: justify;
+  }
+  .btn{
+    width: 340px;
+    color: white;
+    background-color: #838D52;
+    border-radius: 35.56px;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding: 8px 12px;
+  }
+}
+@media (max-width: 1280px) {
+  .container-bottom-content{
+    .title{
+      font-size: 26px;
+      letter-spacing:-1px;
+    }
+    .text{
+      font-size: 14px;
+    }
+    .btn{
+      font-size: 20px;
+      width: 240px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .title-btn {
+    font-size: 17px;
+    padding: 0.25rem 1rem;
+  }
+  .designer-btn{
+    width: 108px;
+  }
+  .minimalist-btn {
+    width: 108px;
+  }
+  .container-bottom-content{
+    .title{
+      font-size: 20px;
+    }
+    .text{
+      font-size: 12px;
+      line-height: 2.5;
+    }
+    .btn{
+      width: 180px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container-bottom-content{
+    .title{
+      font-size: 15px;
+    }
+    .text{
+      font-size: 9px;
+    }
+    .btn{
+      width: 140px;
+      font-size: 12px;
+      padding: 4px 8px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .designer-btn{
+    font-size: 24px;
+    width: 180px;
+  }
+
+  .minimalist-btn {
+    font-size: 24px;
+    width: 180px;
+  }
+  .container-top-content{
+    .btn{
+      width: 140px;
+      font-size: 12px;
+      padding: 4px 8px;
+    }
+  }
+  .container-bottom-content{
+    .title{
+      font-size: 26px;
+      margin-top: 60px;
+    }
+    .text{
+      font-size: 18px;
+      line-height: 1.4;
+      p{
+        margin-bottom: 10px;
+      }
+    }
+    .btn{
+      width: 230px;
+      font-size: 22px;
+      padding: 4px 8px;
+    }
+  }
+}
+
+@media (max-width: 430px) {
+    .designer-btn{
+        width: 123px;
+        height: 35px;
+    }
+    .minimalist-btn {
+        width: 123px;
+        height: 35px;
+    }
+    .right-ml-btn{
+      margin-left: 15%;
+    }
+    .title-btn {
+        font-size: 16px;
+    }
+    .container-top-content{
+        .title{
+          font-size: 16px;
+        }
+        .text{
+          font-size:12px
+        }
+    }
+    .container-mid-content{
+      .title{
+        font-size: 16px;
+      }
+      .title-remark{
+        font-size: 10px;
+      }
+    }
+    .container-bottom-content{
+      .title{
+        font-size: 16px;
+        margin-top: 30px;
+      }
+      .text{
+        font-size:12px
+      }
+      .btn{
+        width: 150px;
+        height: 36px;
+        font-size: 14px;
+        padding: 4px 8px;
+      }
+    }
+}
+@media (max-width: 390px) {
+  .designer-btn{
+    width: 112px;
+    height: 32px;
+  }
+  .minimalist-btn {
+    width: 112px;
+    height: 32px;
+  }
+  .title-btn {
+      font-size: 14px;
+  }
+  .container-top-content{
+    .title{
+      font-size: 16px;
+    }
+    .text{
+      font-size:12px
+    }
+  }
+.container-mid-content{
+  .title{
+    font-size: 16px;
+  }
+  .title-remark{
+    font-size: 10px;
+  }
+}
+.container-bottom-content{
+  .title{
+    font-size: 16px;
+  }
+  .text{
+    font-size:12px
+  }
+  .btn{
+    width: 150px;
+    height: 36px;
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+}
+}

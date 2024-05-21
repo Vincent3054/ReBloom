@@ -1,3 +1,4 @@
+import { ProductsComponent } from './pages/products/products.component';
 import { Routes } from '@angular/router';
 import { LayoutCardComponent } from './layouts/main/layout-card/layout-card.component';
 import { STATIC_ROUTES } from './core/guards/routes.constant';
@@ -45,6 +46,13 @@ export const routes: Routes = [
         loadComponent: () =>
           import('./pages/order/order.component').then(
             (c) => c.OrderComponent
+          ),
+      },
+      {
+        path: `${STATIC_ROUTES.Products}/:style`,
+        loadComponent: () =>
+          import('./pages/products/products.component').then(
+            (c) => c.ProductsComponent
           ),
       },
       {
