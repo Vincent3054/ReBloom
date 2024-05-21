@@ -41,7 +41,7 @@ hr{
 }
 
 .container-top-content{
-  padding: 30px 10%;
+  padding: 30px 3%;
   .title{
     font-size: 26px;
     color: #838D52;
@@ -54,36 +54,6 @@ hr{
     margin-bottom: 20px;
     text-align: justify;
   }
-}
-.container-mid-content{
-  padding: 0px 10% 0px 10%;
-  .title{
-    font-size: 26px;
-    color: #838D52;
-    font-weight: 900;
-    margin-bottom: 0px;
-    line-height: 1;
-    margin-bottom: 5px;
-  }
-  .title-remark{
-    font-size: 14px;
-  }
-}
-.container-bottom-content{
-  padding: 0px 10% 0px 10%;
-  .title{
-    font-size: 37px;
-    color: #838D52;
-    font-weight: 900;
-    margin-top: 0px;
-  }
-  .text{
-    font-size: 22px;
-    line-height: 2.5;
-    font-weight: 400;
-    text-align: justify;
-  }
-
 }
 
 .btn{
@@ -101,16 +71,7 @@ hr{
 
 
 @media (max-width: 1280px) {
-  .container-bottom-content{
-    .title{
-      font-size: 26px;
-      letter-spacing:-1px;
-    }
-    .text{
-      font-size: 14px;
-    }
 
-  }
   .btn{
     font-size: 20px;
     width: 240px;
@@ -128,15 +89,7 @@ hr{
   .minimalist-btn {
     width: 108px;
   }
-  .container-bottom-content{
-    .title{
-      font-size: 20px;
-    }
-    .text{
-      font-size: 12px;
-      line-height: 2.5;
-    }
-  }
+
   .btn{
     width: 180px;
     font-size: 16px;
@@ -144,15 +97,6 @@ hr{
 }
 
 @media (max-width: 768px) {
-  .container-bottom-content{
-    .title{
-      font-size: 15px;
-    }
-    .text{
-      font-size: 9px;
-    }
-
-  }
   .btn{
     width: 140px;
     font-size: 12px;
@@ -175,20 +119,6 @@ hr{
       font-size: 12px;
       padding: 4px 8px;
     }
-  }
-  .container-bottom-content{
-    .title{
-      font-size: 26px;
-      margin-top: 60px;
-    }
-    .text{
-      font-size: 18px;
-      line-height: 1.4;
-      p{
-        margin-bottom: 10px;
-      }
-    }
-
   }
   .btn{
     width: 230px;
@@ -213,6 +143,7 @@ hr{
         font-size: 16px;
     }
     .container-top-content{
+        padding: 15px 3% 5px 3%;
         .title{
           font-size: 16px;
         }
@@ -220,31 +151,15 @@ hr{
           font-size:12px
         }
     }
-    .container-mid-content{
-      .title{
-        font-size: 16px;
-      }
-      .title-remark{
-        font-size: 10px;
-      }
-    }
-    .container-bottom-content{
-      .title{
-        font-size: 16px;
-        margin-top: 30px;
-      }
-      .text{
-        font-size:12px
-      }
-
-    }
     .btn{
       width: 150px;
       height: 36px;
       font-size: 14px;
       padding: 4px 8px;
+      margin-right: 3%;
     }
 }
+
 @media (max-width: 390px) {
   .designer-btn{
     width: 112px;
@@ -258,6 +173,7 @@ hr{
       font-size: 14px;
   }
   .container-top-content{
+    padding: 15px 3% 5px 3%;
     .title{
       font-size: 16px;
     }
@@ -265,27 +181,10 @@ hr{
       font-size:12px
     }
   }
-.container-mid-content{
-  .title{
-    font-size: 16px;
+  .btn{
+    width: 150px;
+    height: 36px;
+    font-size: 14px;
+    padding: 4px 8px;
   }
-  .title-remark{
-    font-size: 10px;
-  }
-}
-.container-bottom-content{
-  .title{
-    font-size: 16px;
-  }
-  .text{
-    font-size:12px
-  }
-
-}
-.btn{
-  width: 150px;
-  height: 36px;
-  font-size: 14px;
-  padding: 4px 8px;
-}
 }

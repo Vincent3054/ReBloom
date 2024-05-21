@@ -63,6 +63,10 @@
 }
 
 @media (max-width: 768px) {
+  .banner-image {
+    content: url('../../../assets/images/qa/768-qa-banner.png');
+  }
+
   .title{
     font-size: 14px;
   }

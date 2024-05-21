@@ -16,7 +16,6 @@ import { ActivatedRoute } from '@angular/router';
   styleUrl: './products.component.scss'
 })
 export class ProductsComponent {
-  // activeStyle: string = 'designer';
   OrderMid1ImgSrc = '../../../assets/images/order/768-order-mid-img-1.png';
   OrderMid2ImgSrc = '../../../assets/images/order/768-order-mid-img-2.png';
   activeStyle: 'flowers' | 'additional' = 'flowers';
