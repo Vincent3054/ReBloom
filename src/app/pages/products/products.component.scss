@@ -109,10 +109,11 @@ hr{
     .text{
       font-size: 14px;
     }
-    .btn{
-      font-size: 20px;
-      width: 240px;
-    }
+
+  }
+  .btn{
+    font-size: 20px;
+    width: 240px;
   }
 }
 
@@ -135,10 +136,10 @@ hr{
       font-size: 12px;
       line-height: 2.5;
     }
-    .btn{
-      width: 180px;
-      font-size: 16px;
-    }
+  }
+  .btn{
+    width: 180px;
+    font-size: 16px;
   }
 }
 
@@ -150,11 +151,12 @@ hr{
     .text{
       font-size: 9px;
     }
-    .btn{
-      width: 140px;
-      font-size: 12px;
-      padding: 4px 8px;
-    }
+
+  }
+  .btn{
+    width: 140px;
+    font-size: 12px;
+    padding: 4px 8px;
   }
 }
 @media (max-width: 767px) {
@@ -186,11 +188,12 @@ hr{
         margin-bottom: 10px;
       }
     }
-    .btn{
-      width: 230px;
-      font-size: 22px;
-      padding: 4px 8px;
-    }
+
+  }
+  .btn{
+    width: 230px;
+    font-size: 22px;
+    padding: 4px 8px;
   }
 }
 
@@ -233,12 +236,13 @@ hr{
       .text{
         font-size:12px
       }
-      .btn{
-        width: 150px;
-        height: 36px;
-        font-size: 14px;
-        padding: 4px 8px;
-      }
+
+    }
+    .btn{
+      width: 150px;
+      height: 36px;
+      font-size: 14px;
+      padding: 4px 8px;
     }
 }
 @media (max-width: 390px) {
@@ -276,11 +280,12 @@ hr{
   .text{
     font-size:12px
   }
-  .btn{
-    width: 150px;
-    height: 36px;
-    font-size: 14px;
-    padding: 4px 8px;
-  }
+
+}
+.btn{
+  width: 150px;
+  height: 36px;
+  font-size: 14px;
+  padding: 4px 8px;
 }
 }
