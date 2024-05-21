@@ -83,18 +83,23 @@ hr{
     font-weight: 400;
     text-align: justify;
   }
-  .btn{
-    width: 340px;
-    color: white;
-    background-color: #838D52;
-    border-radius: 35.56px;
-    font-size: 30px;
-    font-weight: 600;
-    margin-top: 24px;
-    margin-bottom: 24px;
-    padding: 8px 12px;
-  }
+
 }
+
+.btn{
+  width: 340px;
+  color: white;
+  background-color: #838D52;
+  border-radius: 35.56px;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding: 8px 12px;
+  margin-right: 47px;
+}
+
+
 @media (max-width: 1280px) {
   .container-bottom-content{
     .title{
