@@ -1,7 +1,7 @@
 // 假設你需要自定義的額外樣式，可以在這裡寫
-// .text, .content {
-//   // @apply text-sm lg:text-base; // Responsive font size
-// }
+.text, .content {
+  @apply text-sm lg:text-base; // Responsive font size
+}
 .text-border-bottom{
   border-bottom: 0.5px solid #838D52 ;
 }
