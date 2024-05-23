@@ -26,9 +26,25 @@
         font-weight: bold;
         font-size: 1rem;
         transition: color 0.3s;
+        padding: 8px 18px;
 
         &:hover {
-          color: #38a169;
+          border: 1px solid #838D52;
+          border-radius: 35.56px;
+        }
+
+        &:active,
+        a.active {
+          background-color: #838D52;
+          color: white;
+        }
+
+        &:focus{
+          background-color: #838D52;
+          color: white;
+          border: 1px solid #838D52;
+          border-radius: 35.56px;
+          padding: 8px 18px;
         }
       }
     }
@@ -38,7 +54,7 @@
     border: 1px solid #838D52;
     border-radius: 100px 100px 100px 0;
     padding: 14px 40px;
-    max-width: 576px; // 確保 nav 寬度固定
+    min-width: 400px; // 確保 nav 寬度固定
     margin-left: auto; // 將 nav 推至最右側
   }
 }
@@ -97,10 +113,6 @@
   width: 100%; /* 使列表寬度為滿版 */
 }
 
-.menu-list li {
-  // margin: 10px 0;
-}
-
 .menu-list a,
 .menu-list span.menu-heading {
   color: #838D52;
@@ -145,9 +157,24 @@
 }
 
 @media (max-width: 768px) {
+
   .container-header{
     padding: 1rem 1rem;
     margin-bottom: 5px;
+    align-items: center; // 垂直置中
+
+    ul {
+      li {
+        a {
+          font-size: 0.75rem;
+          padding: 3px 10px;
+        }
+      }
+    }
+    nav {
+      max-width: 450px; // 確保 nav 寬度固定
+      padding: 10px 15px;
+    }
   }
   .header-logo{
     img {

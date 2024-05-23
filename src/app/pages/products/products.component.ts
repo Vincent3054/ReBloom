@@ -56,4 +56,8 @@ export class ProductsComponent {
       this.OrderMid2ImgSrc = '../../../assets/images/order/768-order-mid-img-2.png';
     }
   }
+
+  openLink() {
+    window.open('https://www.instagram.com/rebloom_studio__?igsh=MmdsZnA2bmhkNzhw&utm_source=qr', '_blank');
+  }
 }
