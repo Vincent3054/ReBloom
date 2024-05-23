@@ -1,7 +1,7 @@
 <div [ngClass]="{'container-header': true, 'fixed-header': isMenuOpen}" class="bg-green-100 px-8 py-4 flex items-center justify-between">
   <div class="header-logo">
     <a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="navigateAndCloseMenu()">
-      <img src={{HeaderLogoImgSrc}} alt="Bloom Logo">
+      <img class="w-full" src="../../../assets/images/layouts/768-header-logo.png" alt="Bloom Logo">
     </a>
   </div>
   <div class="flex items-center flex-grow">
@@ -18,7 +18,7 @@
     </a>
   </div>
   <div class="hamburger block md:hidden" (click)="toggleMenu()">
-    <img class="hamburger" [src]="isMenuOpen ? HeadercloseHamburgerImgSrc : HeaderHamburgerImgSrc" alt="header-hamburger">
+    <img class="hamburger w-full" [src]="isMenuOpen ? HeadercloseHamburgerImgSrc : HeaderHamburgerImgSrc" alt="header-hamburger">
   </div>
 </div>
 
