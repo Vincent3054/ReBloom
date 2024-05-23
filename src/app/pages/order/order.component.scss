@@ -127,12 +127,12 @@ hr{
       font-size: 20px;
     }
     .text{
-      font-size: 12px;
+      font-size: 15px;
       line-height: 2.5;
     }
     .btn{
       width: 180px;
-      font-size: 16px;
+      font-size: 17px;
     }
   }
 }
@@ -140,14 +140,15 @@ hr{
 @media (max-width: 768px) {
   .container-bottom-content{
     .title{
-      font-size: 15px;
+      font-size: 16px;
     }
     .text{
-      font-size: 9px;
+      font-size: 12px;
     }
     .btn{
-      width: 140px;
-      font-size: 12px;
+      width: 180px;
+      height: 40px;
+      font-size: 17px;
       padding: 4px 8px;
     }
   }
